@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    font-family: Arial;
+    color: white;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+#f1{
+    color: red;
+    text-align: left;
+}
+
+#f2{
+    font-size: 16px;
+    text-align: right;
+}
+
+h3{
+    font-size: 20px;
+    text-align: left;
+}
+
+p{
+    font-size: 12px;
+    text-align: left;
+}
+input[type=text],
+[type=email],
+[type=password] {
+    border: 1px solid;
+    border-color: grey;
+    margin: 5px;
+    padding: 2px;
+    width: 340px;
+    padding: 12px;
+    background-color: #2b2a2a;
+    color: black;
+}
+
+input[type=checkbox] {
+    border: 1px solid red;
+    background-color: white;
+}
+
+.button1 {
+    background-color: #888888;
+    margin: 1px;
+    padding: 8px;
+    color: #dfdfdf;
+    font-size: 14px;
+    font-weight: bold;
+}

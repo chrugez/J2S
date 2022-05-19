@@ -1,0 +1,92 @@
+body{
+    background-color: navy;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    padding: 2px;
+    border-color: blue;
+}
+
+#tb1{
+    float: left;
+}
+
+#tb2{
+    border: 1px solid;
+}
+
+#tb3{
+    float: right;
+}
+
+input[type=text] {
+    border: 1px solid;
+    border-color: #414141;
+    width: 189px;
+    margin: 2px;
+    padding: 12px;
+    padding-right: 365px;
+    background-color: white;
+    font-size: 14px;
+    font-family: Arial;
+    color: grey;
+}
+
+textarea {
+    border: 1px solid;
+    border-color: #414141;
+    width: 554px;
+    margin: 1px;
+    margin-left: 2px;
+    padding: 5px 6px;
+    background-color: white;
+    font-size: 14px;
+    font-family: Arial;
+    color: grey;
+}
+
+.button1 {
+    border: 1px solid blue;
+    padding: 5px 6px;
+    background-color: rgb(18, 18, 165);
+    font-size: 11px;
+    font-family: Arial;
+    color: white;
+    display: inline-block;
+}
+
+.button2 {
+    border: 1px solid blue;
+    padding: 5px 6px;
+    background-color: rgb(18, 18, 165);
+    font-size: 11px;
+    font-family: Arial;
+    color: white;
+    display: inline-block;
+}
+
+.button3 {
+    border: none;
+    background-color: navy;
+    margin: 4px;
+    padding: 1px;
+    font-size: 11px;
+    font-family: Arial;
+    color: white;
+}
+
+.button4 {
+    border: 1px solid;
+    border-color: blue;
+    background-color: navy;
+    margin: 4px;
+    padding: 1px;
+    font-size: 11px;
+    font-family: Arial;
+    color: white;
+}
