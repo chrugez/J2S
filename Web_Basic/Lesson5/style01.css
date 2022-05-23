@@ -1,0 +1,140 @@
+/* Reset CSS  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+    font: Arial;
+
+}
+
+#div_tong{
+    width: 100%;
+    height: 800px;
+    /* background-color: pink; */
+}
+
+#div_tren{
+    width: 100%;    
+    height: 12%;
+    /* background-color: aliceblue; */
+    border-bottom: 8px solid green;
+}
+
+#div_tren > .trai{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    float: left;
+}
+
+#div_tren > .trai > img{
+    height: 120%;
+}
+
+#div_tren > .phai{
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    float: left;
+}
+
+#div_tren > .phai > .tren{
+    width: 100%;
+    height: 50%;
+    /* background-color: beige; */
+    text-align: right;
+}
+
+#div_tren > .phai > .duoi{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    text-align: right;
+    padding-top: 10px;
+}
+
+#div_duoi{
+    width: 100%;
+    height: 88%;
+    /* background-color: antiquewhite; */
+    margin-top: 4px;
+}
+
+#div_duoi > .trai{
+    width: 20%;
+    height: 100%;
+    background-color: #9ccc9c;
+    float: left;
+    position: relative;
+    border-right: 4px solid green;
+}
+
+#div_duoi > .trai >.hoa{
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+#div_duoi > .giua{
+    width: 65%;
+    height: 100%;
+    /* background-color: yellow; */
+    float: left;
+    position: relative;
+}
+
+#div_duoi > .giua > h1{
+    position: absolute;
+    left: 15%;
+}
+
+#div_duoi > .giua > .img1{
+    position: absolute;
+    left: -2%;
+}
+
+#div_duoi > .giua > .p{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 45%;
+}
+
+#div_duoi > .giua >.p1{
+    position: absolute;
+    left: 15%;
+    top: 42%;
+    margin-bottom: 10px;
+}
+
+#div_duoi > .giua > .img2{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+#div_duoi > .phai{
+    width: 15%;
+    height: 100%;
+    /* background-color: orange; */
+    float: left;
+}
+
+#div_duoi > .phai > .form{
+    width: 100%;
+    background-color: #9ccc9c;
+}
+
+#div_duoi > .phai > .vien{
+    display: flex;
+    justify-content: center;
+    border-left: 4px dotted #9ccc9c;
+}
+
+#div_duoi > .phai > .vien >img{
+    margin-top: 50px;
+}
