@@ -1,0 +1,65 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 600px;
+}
+
+.left{
+    width: 20%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    float: left;
+}
+
+.left > img{
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+
+.mid{
+    position: relative;
+    width: 60%;
+    background-image: url(./sua1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    
+}
+
+.mid > h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: orange;
+}
+
+.mid > span{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.mid > table{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background-color: lightgreen;
+    width: 60%;
+    height: 70%;
+}
+
+.tittle{
+    text-align: right;
+
+}
+
+#btn{
+    text-align: center;
+}
