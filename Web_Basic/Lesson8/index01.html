@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Lương</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="tittle">
+            <p>Tính Lương</p>
+        </div>
+        <div class="content">
+            <div class="salary">
+                <p>Nhập số tiền nhận được</p>
+                <input type="number" id="input" placeholder="Triệu VND">
+            </div>
+            <div class="btn">
+                <button value="Tính thuế thu nhập" onclick="calculate()">Tính thuế thu nhập</button>
+            </div>
+            <div class="result">
+                <p id="calculated">Kết quả tính lương</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calculate(){
+            let input = parseInt(document.getElementById('input').value);
+            let tax = 0;
+            let output = 0;
+            if(input > 0 && input <7){
+                tax = input * 0.1;
+                output = input - tax;
+            }
+            else if(input >= 7 && input <15){
+                tax = input * 0.2;
+                output = input - tax;
+            }
+            else{
+                tax = input * 0.3;
+                output = input - tax;
+            }
+            tax = tax.toFixed(2);
+            output = output.toFixed(2);
+            if(input >0){
+                document.getElementById('calculated').innerHTML = `Lương ban đầu ${input} | Thuế ${tax} | Lương nhận được ${output}`;
+            }
+            else{
+                document.getElementById('calculated').innerHTML = 'Vui lòng nhập lại số tiền nhận được!';
+            }
+        }
+    </script>
+</body>
+</html>

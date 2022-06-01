@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Năm Âm Lịch</title>
+    <link rel="stylesheet" href="./style03.css">
+</head>
+<body>
+    <div id="main">
+        <div class="tittle">
+            <p>Tính Năm Âm Lịch</p>
+        </div>
+        <div class="content">
+            <div class="input">
+                <p>Năm dương lịch</p>
+                <input type="number" id="nam_duong" placeholder="Nhập năm">
+            </div>
+            <div class="btn">
+                <button value="Tính năm âm" onclick="calculate()">>></button>
+            </div>
+            <div class="result">
+                <p>Năm âm lịch</p>
+                <input type="text" id="calculated" placeholder="Kết quả tính năm âm">
+            </div>
+        </div>
+    </div>
+    <script>
+        function calculate(){
+        let nam_duong = parseInt(document.getElementById('nam_duong').value);
+        let nam_can = '';
+        let nam_chi = '';
+
+        switch((nam_duong-3)%10){
+            case 0: nam_can = "Quý";
+                break;
+            case 1: nam_can = "Giáp";
+                break;
+            case 2: nam_can = "Ất";
+                break;
+            case 3: nam_can = "Bính";
+                break;
+            case 4: nam_can = "Đinh";
+                break;
+            case 5: nam_can = "Mậu";
+                break;
+            case 6: nam_can = "Kỷ";
+                break;
+            case 7: nam_can = "Canh";
+                break;
+            case 8: nam_can = "Tân";
+                break;
+            case 9: nam_can = "Nhâm";
+                break;
+        };
+        switch ((nam_duong-3)%12){
+            case 0: nam_chi = "Hợi";
+                break;
+            case 1: nam_chi = "Tý";
+                break;
+            case 2: nam_chi = "Sửu";
+                break;
+            case 3: nam_chi = "Dần";
+                break;
+            case 4: nam_chi = "Mão";
+                break;
+            case 5: nam_chi = "Thìn";
+                break;
+            case 6: nam_chi = "Tỵ";
+                break;
+            case 7: nam_chi = "Ngọ";
+                break;
+            case 8: nam_chi = "Mùi";
+                break;
+            case 9: nam_chi = "Thân";
+                break;
+            case 10: nam_chi = "Dậu";
+                break;
+            case 11: nam_chi = "Tuất";
+                break;
+        };
+        let result = (`${nam_can} ${nam_chi}`);
+        document.getElementById('calculated').value = result;
+    }
+    </script>
+</body>
+</html>

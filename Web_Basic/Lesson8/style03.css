@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 500px;
+    justify-content: center
+}
+
+#main{
+    width: 450px;
+    height: 150px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #CDC2AE;
+    border: 1px #354259 solid;
+}
+
+.tittle{
+    margin: auto;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tittle > p{
+    height: 100%;
+    color: rgb(53, 66, 89);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.content{
+    padding: 5px;
+    position: relative;
+}
+
+.input{
+    display: block;
+    float: left;
+}
+
+.input > p{
+    margin: auto;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+input[type="nam_duong"]{
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #DCCDCA;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    float: left;
+    position: absolute;
+    top: 28px;
+    left: 200px;
+}
+
+.btn > button{
+    border-radius: 4px;
+    background-color: rgb(53, 66, 89);
+    border: 1px solid #DCCDCA;
+    padding: 5px;
+    color: rgb(236, 229, 199);
+}
+
+.btn > button:active{
+    border-radius: 4px;
+    background-color: rgb(194, 222, 209);
+    border: 1px solid #DCCDCA;
+    padding: 5px;
+    color: rgb(53, 66, 89);
+}
+
+.result{
+    position: relative;
+}
+
+.result > p{
+    margin: auto;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result > input{
+    position: absolute;
+    right: 20px;
+}
