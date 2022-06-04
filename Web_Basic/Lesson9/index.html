@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number?</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Phân biệt số chẵn hay lẻ</h1>
+        <form action="">
+            <p>Nhập số cần phân biệt</p>
+            <input type="number" name="" id="getNumber" placeholder="Nhập tại đây">
+            <button type="button" id="enter" onclick="calculate()">Enter</button>
+            <br>
+            <div class="result" id="decimal"></div>
+            <div class="result" id="primeNumber"></div>
+            <div class="result" id="countToOne"></div>
+            <div class="result" id="countEnter"></div>
+        </form>
+        
+    </div>
+    <script>
+        let input = document.getElementById("getNumber");
+        input.addEventListener("keydown", function(event){
+            if(event.keyCode === 13){
+                event.preventDefault();
+                document.getElementById("enter").click();
+            }
+        });
+
+        
+
+        let count = 0;
+        function calculate(){
+            let number = parseFloat(document.getElementById('getNumber').value);
+            document.getElementById('countToOne').innerHTML = '';
+
+            if(Number.isInteger(number)){
+                if(number % 2 === 0){
+                    document.getElementById('decimal').innerHTML = `${number} là số chẵn `;
+                } else{
+                    document.getElementById('decimal').innerHTML = `${number} là số lẻ `;
+                }
+            } else{
+                document.getElementById('decimal').innerHTML = `${number} là số thập phân `;
+            }
+
+            let prime = 1;
+            if(number < 2){
+                prime = 0;
+            } else {
+                for(let i = 2; i < number - 1; i++){
+                    if(number % i === 0){
+                        prime = 0;
+                        break;
+                    }
+                }
+            }
+            if(prime === 0){
+                document.getElementById('primeNumber').innerHTML = `${number} không phải là số nguyên tố `;
+            } else{
+                document.getElementById('primeNumber').innerHTML = `${number} là số nguyên tố `;
+            }
+
+            if(number>0){
+                for(let i = 1; i <= number ; i++){
+                    document.getElementById('countToOne').innerHTML +=(i + ' ');
+                }
+                if(Number.isInteger(number) === false)
+                    document.getElementById('countToOne').innerHTML +=(number);
+            } else{
+                if(Number.isInteger(number) === false)
+                    document.getElementById('countToOne').innerHTML +=(number + ' ');
+                for(let i = 1; i >= number ; number++){
+                    document.getElementById('countToOne').innerHTML +=(Math.ceil(number) + ' ');
+                }
+            }
+
+            count += 1;
+            document.getElementById('countEnter').innerHTML = ` Bạn đã nhập ${count} số `;
+        }
+    </script>
+</body>
+</html>

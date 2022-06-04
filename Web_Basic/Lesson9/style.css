@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(140, 192, 222);
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1, p{
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+
+form{
+    text-align: center;
+    margin-top: 2%;
+}
+
+input, button{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    transition: 0.5s;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: rgba(244, 191, 191, 0.9);
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    transition: 0.5s;
+}
+
+button:active{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    background: rgba(255, 217, 192, 0.9);
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    transition: 0.5s;
+}
+
+
